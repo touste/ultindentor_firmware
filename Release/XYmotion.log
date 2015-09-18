@@ -1,0 +1,756 @@
+﻿Build started 03/06/2015 15:02:22.
+     1>Project "C:\Users\touste\Documents\Arduino\firmware\XYmotion.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\firmware.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" /I"C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega" /IC:\Users\touste\Documents\Arduino\firmware /I"C:\Program Files (x86)\Arduino\libraries" /I"C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries" /I"C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers" /IC:\Users\touste\Documents\Arduino\libraries /I"C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/" /I"C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/" /I"C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include" /Zi /nologo /W3 /WX- /Od /Oi /Oy- /D __AVR_ATmega2560__ /D ARDUINO=163 /D ARDUINO_MAIN /D __AVR__ /D __avr__ /D F_CPU=16000000L /D __cplusplus /D ARDUINO_ARCH_AVR /D ARDUINO_AVR_MEGA2560 /D _MBCS /X /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /FI"C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h" /analyze- /errorReport:prompt gen_tcounts_curves.cpp Head_selector.cpp LC_selector.cpp SerialCommand.cpp SerialRefs.cpp Servo.cpp XYmotion.cpp Zmotion.cpp
+         gen_tcounts_curves.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         Head_selector.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         LC_selector.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         SerialCommand.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         SerialRefs.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         Servo.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         XYmotion.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         Zmotion.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(20): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(21): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\stddef.h(212): error C2371: 'size_t' : redefinition; different basic types
+                 predefined C++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\math.h(364): warning C4002: too many actual parameters for macro '__asm__'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1613): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1615): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1616): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1617): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1618): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1619): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1620): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1621): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1622): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1623): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1624): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1625): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1626): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1627): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1628): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1629): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1630): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1631): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1632): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1633): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1634): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1635): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1636): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1637): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1638): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1639): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1640): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1641): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1642): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1643): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1644): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1645): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1646): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1647): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1648): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1649): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1650): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1651): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1652): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1653): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1654): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1655): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1656): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1657): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1658): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1659): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1660): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1661): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1662): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1663): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1664): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1665): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1666): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1667): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1668): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1669): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/iomxx0_1.h(1670): warning C4068: unknown pragma
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/pgmspace.h(1187): error C2446: ':' : no conversion from 'size_t' to 'const char *'
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h(118): error C2371: 'byte' : redefinition; different basic types
+                 C:\Users\touste\Documents\Arduino\firmware\Visual Micro\.firmware.vsarduino.h(65) : see declaration of 'byte'
+     1>c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(122): error C2535: 'size_t HardwareSerial::write(uint8_t)' : member function already defined or declared
+                 c:\program files (x86)\arduino\hardware\arduino\avr\cores\arduino\HardwareSerial.h(119) : see declaration of 'HardwareSerial::write'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C4980: '__value' : use of this keyword requires /clr:oldSyntax command line option
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(684): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(689): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(694): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(699): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(711): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(716): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(721): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr/eeprom.h(726): error C2059: syntax error : '__value'
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(88): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay_basic.h(110): error C2065: '__asm__' : undeclared identifier
+     1>C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\util/delay.h(95): fatal error C1021: invalid preprocessor command 'warning'
+         Generating Code...
+     1>Done Building Project "C:\Users\touste\Documents\Arduino\firmware\XYmotion.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.76
