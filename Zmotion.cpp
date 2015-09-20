@@ -164,7 +164,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 		motionz.last_hardstop_z = hardstop;
 		motionz.last_step_descel_hardstop_z = motionz.step_descel_z;
 
-		if ((indent_step<=motionz.step_descel_z) || (indent_step>=(motionz.step_accel_z+motionz.step_constant_z))) {
+		if (get_contact == true  && ((indent_step<=motionz.step_descel_z) || (indent_step>=(motionz.step_accel_z+motionz.step_constant_z)))) {
 			Z_init();
 			sei();
 			return; // no motion
