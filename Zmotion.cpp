@@ -433,6 +433,8 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 
 			}
 
+			WRITE(START_ACQ_PIN, HIGH);
+
 
 
 	}
@@ -453,7 +455,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 	}
 	else if (get_contact == true) {
 		unsigned long steps = motionz.step_accel_z + actual_steps + motionz.step_descel_z;
-		motionz.pos_z = motionz.pos_z + (float)actual_steps*1.0/AXIS_STEPS_PER_UNIT_Z;;
+		motionz.pos_z = motionz.pos_z + (float)steps*1.0/AXIS_STEPS_PER_UNIT_Z;;
 	}
 	else {
 		motionz.pos_z = motionz.pos_z + z;
