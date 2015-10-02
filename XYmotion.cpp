@@ -264,7 +264,7 @@ void moveXY_rel(float x, float y, float speed)  // we need to fill all these mot
 		sei();
 		return;
 	}
-
+	
 	// Start the X motion:
 	#ifdef DEBUG
 		Serial.print("Initial absolute x position: ");

@@ -182,6 +182,8 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 	float dcount_min = 1.0/(float)AXIS_STEPS_PER_UNIT_Z*(float)INTERRUPT_FREQ_Z/speed;
 	unsigned int constantspeed_dc = (unsigned int) dcount_min - (unsigned int) CPUCYCLES_Z;
 
+	
+
 
 	if (constantspeed_dc<5) { // I don't know what went wrong but this is bad
 		disable_z();
