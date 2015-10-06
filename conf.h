@@ -30,7 +30,7 @@
 #define JERK_XY 10000
 
 #define ACCEL_Z 2000
-#define HARDSTOP_DESCEL_Z 50000
+#define HARDSTOP_JERK_Z 10000000
 #define JERK_Z 200000
 
 #define CPUCYCLES_Z 1

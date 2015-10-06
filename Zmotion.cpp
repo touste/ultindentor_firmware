@@ -147,7 +147,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 
 		if (hardstop == true) {
 			if (motionz.last_hardstop_z == false) {
-				motionz.step_descel_z = min(gen_timercounts(curve_table_z_hardstop, speed, INTERRUPT_FREQ_Z, AXIS_STEPS_PER_UNIT_Z, JERK_Z, HARDSTOP_DESCEL_Z, CPUCYCLES_Z, false), motionz.step_accel_z); //The calculation of the speed curve is done now (it takes some time
+				motionz.step_descel_z = min(gen_timercounts(curve_table_z_hardstop, speed, INTERRUPT_FREQ_Z, AXIS_STEPS_PER_UNIT_Z, HARDSTOP_JERK_Z, ACCEL_Z, CPUCYCLES_Z, true), motionz.step_accel_z); //The calculation of the speed curve is done now (it takes some time
 			}
 			else {
 				motionz.step_descel_z = motionz.last_step_descel_hardstop_z;
