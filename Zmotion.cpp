@@ -8,7 +8,7 @@
 #include "microsmooth.h"
 
 
-unsigned int curve_table_z[2000];
+unsigned int curve_table_z[1650];
 unsigned int curve_table_z_hardstop[150];
 motion_z motionz;
 extern SerialCommand SCmd;

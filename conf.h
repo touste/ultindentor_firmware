@@ -9,7 +9,7 @@
 #define MAX_SPEED_XY 100
 #define MIN_SPEED_XY 2 
 
-#define MAX_SPEED_Z 120
+#define MAX_SPEED_Z 80
 #define MIN_SPEED_Z 0.01
 
 #define F_CPU 16000000
@@ -29,16 +29,16 @@
 #define ACCEL_XY 500
 #define JERK_XY 10000
 
-#define ACCEL_Z 3700
+#define ACCEL_Z 2000
 #define HARDSTOP_DESCEL_Z 50000
-#define JERK_Z 500000
+#define JERK_Z 200000
 
 #define CPUCYCLES_Z 1
 
 #define CPUCYCLES_XY 1
 
 #define SCURVES_XY true
-#define SCURVES_Z false
+#define SCURVES_Z true
 
 #define X_ENABLE_ON false
 #define Y_ENABLE_ON false
