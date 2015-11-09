@@ -180,7 +180,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 	actual_steps = motionz.step_constant_z;
 
 	float dcount_min = 1.0/(float)AXIS_STEPS_PER_UNIT_Z*(float)INTERRUPT_FREQ_Z/speed;
-	unsigned int constantspeed_dc = (unsigned int) dcount_min - (unsigned int) CPUCYCLES_Z;
+	unsigned long constantspeed_dc = (unsigned long) dcount_min - (unsigned long) CPUCYCLES_Z;
 
 	
 
@@ -262,7 +262,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 						WRITE(Z_STEP_P, HIGH);  // step if the number of interrupts cycles is greater than a threshold
 						checkHitEndstops_z();
 						WRITE(Z_STEP_P,LOW);  // after 1us, pull the pin low and increment the step counter
-						for (unsigned int j=0; j<constantspeed_dc; j++) {
+						for (unsigned long j=0; j<constantspeed_dc; j++) {
 							__asm__("nop\n\t");
 						}
 				}
@@ -348,7 +348,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 									WRITE(Z_STEP_P, HIGH);  // step if the number of interrupts cycles is greater than a threshold
 									checkHitEndstops_z();
 									WRITE(Z_STEP_P,LOW);  // after 1us, pull the pin low and increment the step counter
-									for (unsigned int j=0; j<constantspeed_dc; j++) {
+									for (unsigned long j=0; j<constantspeed_dc; j++) {
 										__asm__("nop\n\t");
 									}
 							}
@@ -362,7 +362,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 							return;
 						}
 						WRITE(Z_STEP_P,LOW);  // after 1us, pull the pin low and increment the step counter
-						for (unsigned int j=0; j<constantspeed_dc; j++) {
+						for (unsigned long j=0; j<constantspeed_dc; j++) {
 							__asm__("nop\n\t");
 						}
 				}
@@ -403,7 +403,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 									WRITE(Z_STEP_P, HIGH);  // step if the number of interrupts cycles is greater than a threshold
 									checkHitEndstops_z();
 									WRITE(Z_STEP_P,LOW);  // after 1us, pull the pin low and increment the step counter
-									for (unsigned int j=0; j<constantspeed_dc; j++) {
+									for (unsigned long j=0; j<constantspeed_dc; j++) {
 										__asm__("nop\n\t");
 									}
 							}
@@ -417,7 +417,7 @@ void moveZ_rel(float z, float speed, bool hardstop, bool get_contact, float inde
 							return;
 						}
 						WRITE(Z_STEP_P,LOW);  // after 1us, pull the pin low and increment the step counter
-						for (unsigned int j=0; j<constantspeed_dc; j++) {
+						for (unsigned long j=0; j<constantspeed_dc; j++) {
 							__asm__("nop\n\t");
 						}
 				}
